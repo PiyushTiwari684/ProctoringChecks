@@ -1,0 +1,314 @@
+2025-11-03 15:06:00 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.candidate.findUnique()`[22m invocation:[39m
+
+
+The table `public.candidates` does not exist in the current database.
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/authControllers.js:64:20
+2025-11-03 15:08:38 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.candidate.findUnique()`[22m invocation:[39m
+
+
+The table `public.candidates` does not exist in the current database.
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/authControllers.js:64:20
+2025-11-03 15:10:05 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.candidate.findUnique()`[22m invocation:[39m
+
+
+The table `public.candidates` does not exist in the current database.
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/authControllers.js:64:20
+2025-11-03 15:23:25 [error]: TypeError: Cannot read properties of undefined (reading 'id')
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/systemCheckController.js:10:37
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/middlewares/errorHandler.js:171:19
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:291:5)
+2025-11-03 15:24:51 [error]: TypeError: Cannot read properties of undefined (reading 'id')
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/systemCheckController.js:10:37
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/middlewares/errorHandler.js:171:19
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:295:15
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\router\index.js:291:5)
+2025-11-07 12:42:54 [error]: ReferenceError: existingAttempts is not defined
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:161:22
+2025-11-07 12:43:29 [error]: ReferenceError: existingAttempts is not defined
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:161:22
+2025-11-07 12:43:40 [error]: ReferenceError: existingAttempts is not defined
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:161:22
+2025-11-07 12:44:25 [error]: PrismaClientValidationError: 
+[31mInvalid [1m`prisma.candidateAssessment.create()`[22m invocation:[39m
+
+{
+  data: {
+    candidateId: "0ae5fa70-5d8a-42e0-986a-7f8ad523054b",
+    assessmentId: "assess-prof-001",
+    sessionStatus: "NOT_STARTED",
+    verificationStatus: "NOT_STARTED",
+    startedAt: new Date("2025-11-07T07:14:25.644Z"),
+[32m+[39m   [32mattemptNumber[39m[32m: [39m[32mInt[39m
+  }
+}
+
+Argument `[32mattemptNumber[39m` is missing.
+    at Nn (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:157:19
+2025-11-07 12:54:22 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.assessment.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `assessments_createdById_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:23:22
+2025-11-07 12:59:56 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.assessment.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `assessments_createdById_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:23:22
+2025-11-07 13:00:33 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.assessment.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `assessments_createdById_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/assessmentController.js:23:22
+2025-11-07 15:58:08 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.identityVerification.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `identity_verifications_attemptId_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/identityVerificationController.js:97:22
+2025-11-07 16:02:44 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.identityVerification.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `identity_verifications_attemptId_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/identityVerificationController.js:97:22
+2025-11-07 16:02:52 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.identityVerification.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `identity_verifications_attemptId_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/identityVerificationController.js:97:22
+2025-11-07 16:06:16 [error]: PrismaClientKnownRequestError: 
+[31mInvalid [1m`prisma.identityVerification.create()`[22m invocation:[39m
+
+
+Foreign key constraint violated on the constraint: `identity_verifications_attemptId_fkey`
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:7268)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/identityVerificationController.js:97:22
+2025-11-09 10:25:12 [error]: Error: Failed to get audio duration: Cannot find ffprobe
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/utils/audioProcessor.js:135:16
+    at handleCallback (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\fluent-ffmpeg\lib\ffprobe.js:106:9)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\fluent-ffmpeg\lib\ffprobe.js:145:16
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\fluent-ffmpeg\lib\capabilities.js:194:9
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecks\backend\node_modules\fluent-ffmpeg\lib\capabilities.js:183:15
+    at suppressedCallback (node:fs:256:5)
+    at FSReqCallback.oncomplete (node:fs:187:23)
+2025-11-09 10:28:01 [error]: ReferenceError: levenshteinDistance is not defined
+    at calculateSimilarity (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/utils/stringSimilarity.js:66:20)
+    at checkMatch (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/utils/stringSimilarity.js:83:17)
+    at file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecks/backend/src/controllers/identityVerificationController.js:214:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-09 11:57:14 [error]: PrismaClientValidationError: 
+[31mInvalid [1m`prisma.candidateAssessment.findUnique()`[22m invocation:[39m
+
+{
+  where: {
+    id: "08cb8c3b-65ac-48a5-aed3-05ccc32959fa"
+  },
+  include: {
+    assessment: {
+      include: {
+        sections: {
+          orderBy: {
+            orderIndex: "asc"
+          },
+          include: {
+            [31mquestionSections[39m: {
+            [31m~~~~~~~~~~~~~~~~[39m
+              include: {
+                question: true
+              }
+            },
+[32m?[39m           [32massessment[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32mquestions[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32manswers[39m[32m?[39m[32m: [39m[32mtrue[39m
+          }
+        }
+      }
+    }
+  }
+}
+
+Unknown field [31m`questionSections`[39m for [1minclude[22m statement on model [1m`Section`[22m. Available options are listed in [32mgreen[39m.
+    at Nn (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/controllers/assessmentController.js:227:19
+2025-11-09 11:58:18 [error]: PrismaClientValidationError: 
+[31mInvalid [1m`prisma.candidateAssessment.findUnique()`[22m invocation:[39m
+
+{
+  where: {
+    id: "70d403b9-f61c-41c9-b8d9-02c6aed68664"
+  },
+  include: {
+    assessment: {
+      include: {
+        sections: {
+          orderBy: {
+            orderIndex: "asc"
+          },
+          include: {
+            [31mquestionSections[39m: {
+            [31m~~~~~~~~~~~~~~~~[39m
+              include: {
+                question: true
+              }
+            },
+[32m?[39m           [32massessment[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32mquestions[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32manswers[39m[32m?[39m[32m: [39m[32mtrue[39m
+          }
+        }
+      }
+    }
+  }
+}
+
+Unknown field [31m`questionSections`[39m for [1minclude[22m statement on model [1m`Section`[22m. Available options are listed in [32mgreen[39m.
+    at Nn (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/controllers/assessmentController.js:227:19
+2025-11-09 11:58:20 [error]: PrismaClientValidationError: 
+[31mInvalid [1m`prisma.candidateAssessment.findUnique()`[22m invocation:[39m
+
+{
+  where: {
+    id: "2486058b-a435-4920-945c-ecfe7b9a0ca4"
+  },
+  include: {
+    assessment: {
+      include: {
+        sections: {
+          orderBy: {
+            orderIndex: "asc"
+          },
+          include: {
+            [31mquestionSections[39m: {
+            [31m~~~~~~~~~~~~~~~~[39m
+              include: {
+                question: true
+              }
+            },
+[32m?[39m           [32massessment[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32mquestions[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32manswers[39m[32m?[39m[32m: [39m[32mtrue[39m
+          }
+        }
+      }
+    }
+  }
+}
+
+Unknown field [31m`questionSections`[39m for [1minclude[22m statement on model [1m`Section`[22m. Available options are listed in [32mgreen[39m.
+    at Nn (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/controllers/assessmentController.js:227:19
+2025-11-09 11:59:13 [error]: PrismaClientValidationError: 
+[31mInvalid [1m`prisma.candidateAssessment.findUnique()`[22m invocation:[39m
+
+{
+  where: {
+    id: "22d90a27-c232-4def-b192-898a6a0e7137"
+  },
+  include: {
+    assessment: {
+      include: {
+        sections: {
+          orderBy: {
+            orderIndex: "asc"
+          },
+          include: {
+            [31mquestionSections[39m: {
+            [31m~~~~~~~~~~~~~~~~[39m
+              include: {
+                question: true
+              }
+            },
+[32m?[39m           [32massessment[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32mquestions[39m[32m?[39m[32m: [39m[32mtrue[39m,
+[32m?[39m           [32manswers[39m[32m?[39m[32m: [39m[32mtrue[39m
+          }
+        }
+      }
+    }
+  }
+}
+
+Unknown field [31m`questionSections`[39m for [1minclude[22m statement on model [1m`Section`[22m. Available options are listed in [32mgreen[39m.
+    at Nn (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:29:1363)
+    at ei.handleRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6911)
+    at ei.handleAndLogRequestError (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6593)
+    at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
+    at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
+    at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/controllers/assessmentController.js:227:19
