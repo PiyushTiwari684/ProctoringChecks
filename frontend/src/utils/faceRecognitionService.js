@@ -13,11 +13,8 @@ class FaceRecognitionService {
   constructor() {
     this.isReady = false;
   }
-
-  /**
-   * Ensure models are loaded
-   * @returns {Promise<void>}
-   */
+  
+  
   async ensureModelsLoaded() {
     const status = modelPreloader.getStatus();
 
@@ -29,11 +26,7 @@ class FaceRecognitionService {
     this.isReady = true;
   }
 
-  /**
-   * Extract face descriptor from image or video
-   * @param {HTMLImageElement|HTMLVideoElement|HTMLCanvasElement|string} input - Image element or base64 string
-   * @returns {Promise<Float32Array|null>} 128-d face descriptor or null
-   */
+
   async extractDescriptor(input) {
     try {
       await this.ensureModelsLoaded();

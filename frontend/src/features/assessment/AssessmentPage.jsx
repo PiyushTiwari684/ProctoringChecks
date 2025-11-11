@@ -1,32 +1,244 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import apiClient from "../../api/apiClient";
+import { useFullscreenContext } from "../../context/FullscreenContext";
+import { useProctorContext } from "../../context/ProctorContext";
+import FullscreenWarningOverlay from "../shared/FullscreenWarningOverlay";
+import SecurityWatermark from "../shared/SecurityWatermark";
+import ViolationWarningModal from "../shared/ViolationWarningModal";
+import { ToastContainer, useToast } from "../shared/Toast";
+import { useBrowserRestrictions } from "../../hooks/useBrowserRestrictions";
+import { useWebcamMonitoring } from "../../hooks/useWebcamMonitoring";
+import { getCombinedLocationData, monitorLocationChanges } from "../../utils/locationTracking";
 
 const AssessmentPage = () => {
   const { assessmentId, attemptId } = useParams(); // From route params
   const navigate = useNavigate();
 
-  // Assessment state
-  const [assessment, setAssessment] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  // ==================== CONTEXT & HOOKS ====================
 
-  // Navigation state
-  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  // Fullscreen context - manages fullscreen state and tracking
+  // Tracks: exit count, time outside fullscreen, pause state, auto-submit triggers
+  const {
+    isPaused,                      // true when user exits fullscreen (assessment paused)
+    shouldAutoSubmit,              // true when cumulative time outside fullscreen > 5 min
+    fullscreenExitCount,           // number of times user exited fullscreen
+    totalTimeOutsideFullscreen,    // total seconds spent outside fullscreen
+    resetTracking                  // function to reset fullscreen tracking
+  } = useFullscreenContext();
 
-  // Answers state (store candidate answers)
+  // Proctor context - centralized violation tracking system
+  // Manages: all violations, thresholds, auto-submit logic, batch sending to backend
+  const {
+    startProctoring,               // start proctoring session (must call before tracking violations)
+    stopProctoring,                // stop proctoring and send remaining violations
+    logViolation,                  // log a violation (type, details, severity)
+    getViolationSummary,           // get summary of all violations for submission
+    shouldShowWarning,             // check if should show warning modal for violation type
+    shouldAutoSubmitForViolations, // check if should auto-submit based on violations
+    ViolationType,                 // enum of all violation types (TAB_SWITCH, RIGHT_CLICK, etc.)
+    VIOLATION_THRESHOLDS,          // thresholds config for each violation type
+    setInitialLocation,            // set initial geolocation for comparison
+    setInitialIP                   // set initial IP address for comparison
+  } = useProctorContext();
+
+  // Toast notifications - lightweight notification system
+  const toast = useToast();
+
+  // ==================== COMPONENT STATE ====================
+
+  // Assessment data state
+  const [assessment, setAssessment] = useState(null);  // Full assessment object from API
+  const [loading, setLoading] = useState(true);        // Loading state for initial fetch
+  const [error, setError] = useState("");              // Error message if fetch fails
+
+  // Navigation state - track current position in assessment
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);   // Current section (0-based)
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // Current question in section
+
+  // Answers state - store all candidate answers
+  // Format: { questionId: selectedAnswer }
   const [answers, setAnswers] = useState({});
 
-  // Timer state
-  const [timeRemaining, setTimeRemaining] = useState(null); // in seconds - null means not initialized
+  // Timer state - countdown timer for assessment
+  const [timeRemaining, setTimeRemaining] = useState(null); // in seconds, null = not initialized
+
+  // ==================== PROCTORING STATE ====================
+
+  // Proctoring initialization flag - prevents multiple initialization
+  const [proctoringInitialized, setProctoringInitialized] = useState(false);
+
+  // Violation warning modal state
+  const [violationModalOpen, setViolationModalOpen] = useState(false);      // Modal open/closed
+  const [currentViolationType, setCurrentViolationType] = useState(null);   // Which violation triggered modal
+  const [violationCounts, setViolationCounts] = useState({});               // Local count tracking for UI
+
+  // ==================== VIOLATION HANDLERS ====================
+
+  /**
+   * Handle warning-level violations
+   * Called by useBrowserRestrictions and useWebcamMonitoring when violations occur
+   * Shows modal if violation count is between warning and auto-submit threshold
+   * Otherwise shows toast notification
+   */
+  const handleViolationWarning = useCallback((violationType) => {
+    const threshold = VIOLATION_THRESHOLDS[violationType];
+    const currentCount = violationCounts[violationType] || 0;
+
+    // Show modal if count is in warning range (e.g., 2-4 for tab switching)
+    if (currentCount >= threshold?.warningThreshold && currentCount < threshold?.autoSubmitThreshold) {
+      setCurrentViolationType(violationType);
+      setViolationModalOpen(true);
+    } else {
+      // Show toast for first few violations before warning threshold
+      toast.violation(`Violation detected: ${violationType.replace(/_/g, ' ')}`);
+    }
+
+    // Update local count for UI display
+    setViolationCounts(prev => ({
+      ...prev,
+      [violationType]: (prev[violationType] || 0) + 1
+    }));
+  }, [VIOLATION_THRESHOLDS, violationCounts, toast]);
+
+  /**
+   * Handle critical violations (DEVTOOLS_OPEN, IP_CHANGE, LOCATION_CHANGE)
+   * These trigger immediate auto-submit after 2 seconds delay
+   */
+  const handleCriticalViolation = useCallback((violationType) => {
+    toast.error(`Critical violation: ${violationType}. Assessment will be auto-submitted.`);
+    // Wait 2 seconds to let user see the error message
+    setTimeout(() => {
+      submitAssessment('CRITICAL_VIOLATION');
+    }, 2000);
+  }, [toast]);
+
+  /**
+   * Handle auto-submit from ProctorContext
+   * Called when violation count reaches auto-submit threshold
+   */
+  const handleViolationAutoSubmit = useCallback((reason) => {
+    toast.error(`Assessment auto-submitted: ${reason}`);
+    submitAssessment(reason);
+  }, [toast]);
+
+  // ==================== PROCTORING HOOKS ====================
+
+  /**
+   * Browser Restrictions Hook
+   * Enables all keyboard/mouse/window security when proctoring is active
+   *
+   * What it blocks:
+   * - Tab switching (Alt+Tab, clicking other tabs)
+   * - Right-click context menu
+   * - Copy/Paste/Cut (Ctrl+C/V/X, Cmd+C/V/X)
+   * - Text selection (mouse drag, Ctrl+A)
+   * - Keyboard shortcuts (F12, Ctrl+Shift+I, etc.)
+   * - Developer tools (detects if open, checks every 2 seconds)
+   * - New windows/tabs (Ctrl+N/T, window.open)
+   * - Print (Ctrl+P, Cmd+P, print dialog)
+   * - Screenshots (PrintScreen key, Mac screenshot shortcuts)
+   *
+   * How it works:
+   * - Adds event listeners for all blocked actions
+   * - Calls preventDefault() to stop default behavior
+   * - Logs violations via ProctorContext
+   * - Shows alerts for critical actions (DevTools, Print, Screenshot)
+   * - Injects CSS to disable text selection
+   */
+  useBrowserRestrictions({
+    enabled: proctoringInitialized,           // Only active after proctoring starts
+    onWarning: handleViolationWarning,        // Callback for warning-level violations
+    onCriticalViolation: handleCriticalViolation  // Callback for critical violations
+  });
+
+  /**
+   * Webcam Monitoring Hook
+   * Continuously monitors webcam for face detection during assessment
+   *
+   * What it checks:
+   * - No face detected (candidate left screen)
+   * - Multiple faces (someone else in frame)
+   *
+   * How it works:
+   * - Uses existing BlazeFace detection from system check
+   * - Runs face detection every 5 seconds
+   * - Tracks consecutive "no face" duration
+   * - Warns after 10s of no face
+   * - Critical violation after 30s of no face
+   * - Immediately detects multiple faces
+   *
+   * Thresholds:
+   * - interval: 5000ms (check every 5 seconds)
+   * - noFaceThreshold: 10000ms (warn after 10 seconds)
+   * - criticalNoFaceThreshold: 30000ms (critical after 30 seconds)
+   */
+  useWebcamMonitoring({
+    enabled: proctoringInitialized,           // Only active after proctoring starts
+    interval: 5000,                           // Check every 5 seconds
+    noFaceThreshold: 10000,                   // Warn if no face for 10 seconds
+    criticalNoFaceThreshold: 30000,           // Critical if no face for 30 seconds
+    onWarning: handleViolationWarning,        // Callback for warnings
+    onCritical: handleCriticalViolation       // Callback for critical (30s no face)
+  });
+
+  // Submit assessment function
+  const submitAssessment = useCallback(async (reason = 'MANUAL') => {
+    try {
+      // Get violation summary
+      const violationSummary = getViolationSummary();
+
+      // Stop proctoring
+      stopProctoring();
+
+      // TODO: Add actual API call to submit assessment
+      console.log("Submitting assessment with answers:", answers);
+      console.log("Violation Summary:", violationSummary);
+      console.log("Fullscreen violations:", {
+        exitCount: fullscreenExitCount,
+        totalTimeOutside: totalTimeOutsideFullscreen
+      });
+      console.log("Submit reason:", reason);
+
+      // TODO: Uncomment when backend is ready
+      /*
+      await apiClient.post(`/assessments/${assessmentId}/attempts/${attemptId}/submit`, {
+        answers,
+        violations: violationSummary,
+        fullscreenViolations: {
+          exitCount: fullscreenExitCount,
+          totalTimeOutside: totalTimeOutsideFullscreen
+        },
+        submitReason: reason,
+        timestamp: new Date().toISOString()
+      });
+      */
+
+      // Reset fullscreen tracking
+      resetTracking();
+
+      // Navigate to completion page
+      navigate("/assessment-complete");
+    } catch (error) {
+      console.error("Error submitting assessment:", error);
+      toast.error("Failed to submit assessment. Please try again.");
+    }
+  }, [answers, fullscreenExitCount, totalTimeOutsideFullscreen, resetTracking, navigate, getViolationSummary, stopProctoring, toast, assessmentId, attemptId]);
+
+  // Handle auto-submit from timer
+  const handleAutoSubmit = useCallback(() => {
+    alert("Time's up! Submitting assessment...");
+    submitAssessment(false);
+  }, [submitAssessment]);
+
+  // Handle auto-submit from fullscreen violations
+  const handleFullscreenAutoSubmit = useCallback(() => {
+    alert("Assessment auto-submitted due to fullscreen violations.");
+    submitAssessment(true);
+  }, [submitAssessment]);
 
   // Fetch assessment on mount
-  useEffect(() => {
-    fetchAssessment();
-  }, [assessmentId, attemptId]);
-
-  const fetchAssessment = async () => {
+  const fetchAssessment = useCallback(async () => {
     try {
       const response = await apiClient.get(
         `/assessments/${assessmentId}/attempt/${attemptId}`
@@ -44,12 +256,169 @@ const AssessmentPage = () => {
       setError(err.message || "Error loading assessment");
       setLoading(false);
     }
-  };
+  }, [assessmentId, attemptId]);
 
-  // Timer countdown
+  useEffect(() => {
+    fetchAssessment();
+  }, [fetchAssessment]);
+
+  /**
+   * ==================== PROCTORING INITIALIZATION ====================
+   * Initialize proctoring system when assessment loads
+   *
+   * This runs once when assessment data is fetched and proctoring hasn't been initialized yet
+   *
+   * Steps:
+   * 1. Start proctoring session in ProctorContext
+   * 2. Capture initial IP address and geolocation
+   * 3. Set proctoringInitialized to true
+   * 4. This enables useBrowserRestrictions and useWebcamMonitoring hooks
+   *
+   * Why we do this:
+   * - ProctorContext needs to be initialized before logging violations
+   * - Location tracking needs baseline to compare against (detect IP/location changes)
+   * - The enabled flag prevents hooks from running before proctoring is ready
+   *
+   * Cleanup:
+   * - When component unmounts, stop proctoring and send remaining violations
+   */
+  useEffect(() => {
+    if (assessment && !proctoringInitialized) {
+      // Log initialization message in console (visible to developers, helps debugging)
+      console.log('%c[Proctoring] Initializing proctoring system...',
+        'color: #059669; font-weight: bold; font-size: 14px;');
+
+      // Step 1: Start proctoring session
+      // This resets violation counts, sets assessment/attempt IDs, starts batch sending interval
+      startProctoring(assessmentId, attemptId, handleViolationAutoSubmit);
+
+      // Step 2: Capture initial IP address and geolocation
+      // We need this baseline to detect if user changes location or uses VPN during assessment
+      getCombinedLocationData().then(data => {
+        if (data.ip) setInitialIP(data.ip.ip);  // Store initial IP
+        if (data.geolocation) setInitialLocation(data.geolocation);  // Store initial lat/long
+        console.log('%c[Proctoring] Location tracking initialized',
+          'color: #059669; font-weight: bold;',
+          '\nIP:', data.ip?.ip,
+          '\nLocation:', data.geolocation);
+      }).catch(err => {
+        console.error('[Proctoring] Failed to get location data:', err);
+      });
+
+      // Log all active restrictions (helps verify everything is working)
+      console.log('%c[Proctoring] All restrictions are now active!',
+        'color: #059669; font-weight: bold; font-size: 14px; background: #d1fae5; padding: 10px;',
+        '\n✓ Tab switching detection',
+        '\n✓ Right-click blocking',
+        '\n✓ Keyboard shortcuts blocking',
+        '\n✓ Copy/paste blocking',
+        '\n✓ Text selection blocking',
+        '\n✓ Developer tools detection',
+        '\n✓ Webcam monitoring',
+        '\n✓ Location tracking',
+        '\n✓ Fullscreen monitoring'
+      );
+
+      // Step 3: Mark proctoring as initialized
+      // This enables the useBrowserRestrictions and useWebcamMonitoring hooks
+      setProctoringInitialized(true);
+    }
+
+    // Cleanup function - runs when component unmounts or dependencies change
+    return () => {
+      if (proctoringInitialized) {
+        console.log('%c[Proctoring] Stopping proctoring system',
+          'color: #dc2626; font-weight: bold;');
+        // Send any remaining violations to backend and clear intervals
+        stopProctoring();
+      }
+    };
+  }, [assessment, proctoringInitialized, assessmentId, attemptId, startProctoring, stopProctoring, setInitialIP, setInitialLocation, handleViolationAutoSubmit]);
+
+  /**
+   * ==================== LOCATION MONITORING ====================
+   * Monitor IP address and geolocation changes during assessment
+   *
+   * Why we monitor location:
+   * - Detect if candidate uses VPN or changes network
+   * - Detect if candidate physically moves to different location
+   * - These are critical violations that trigger auto-submit
+   *
+   * How it works:
+   * - Calls monitorLocationChanges() which sets up interval
+   * - Checks every 60 seconds (1 minute)
+   * - Compares current IP/location with initial baseline
+   * - If different, logs violation and shows toast
+   *
+   * Violations:
+   * - IP_CHANGE: CRITICAL - Auto-submits after 1 occurrence
+   * - LOCATION_CHANGE: CRITICAL - Auto-submits after 1 occurrence
+   */
+  useEffect(() => {
+    if (!proctoringInitialized) return;  // Wait for proctoring to be initialized
+
+    // Start monitoring - returns cleanup function
+    const cleanup = monitorLocationChanges(
+      { ip: { ip: null }, geolocation: null },  // Initial data (will be fetched inside function)
+      (newIP) => {
+        // IP changed callback - this is CRITICAL
+        logViolation(ViolationType.IP_CHANGE, {
+          newIP: newIP.ip,
+          timestamp: new Date().toISOString()
+        });
+        toast.error('IP address changed! This is a critical violation.');
+      },
+      (newLocation) => {
+        // Location changed callback - this is CRITICAL
+        logViolation(ViolationType.LOCATION_CHANGE, {
+          newLocation,
+          timestamp: new Date().toISOString()
+        });
+        toast.warning('Location changed!');
+      },
+      60000 // Check every 1 minute (60000ms)
+    );
+
+    // Cleanup interval when component unmounts
+    return cleanup;
+  }, [proctoringInitialized, logViolation, ViolationType, toast]);
+
+  /**
+   * ==================== AUTO-SUBMIT CHECKS ====================
+   * Continuously check if assessment should be auto-submitted
+   */
+
+  /**
+   * Check for violation-based auto-submit
+   * Runs whenever violation counts change
+   * Auto-submits if any violation type exceeds its threshold
+   */
+  useEffect(() => {
+    if (shouldAutoSubmitForViolations()) {
+      handleViolationAutoSubmit('VIOLATION_THRESHOLD_EXCEEDED');
+    }
+  }, [shouldAutoSubmitForViolations, handleViolationAutoSubmit]);
+
+  /**
+   * Check for fullscreen-based auto-submit
+   * Runs whenever fullscreen tracking changes
+   * Auto-submits if total time outside fullscreen > 5 minutes
+   */
+  useEffect(() => {
+    if (shouldAutoSubmit()) {
+      handleFullscreenAutoSubmit();
+    }
+  }, [shouldAutoSubmit, handleFullscreenAutoSubmit]);
+
+  // Timer countdown - pause when fullscreen is exited
   useEffect(() => {
     // Don't start timer if not initialized yet
     if (timeRemaining === null || timeRemaining === undefined) {
+      return;
+    }
+
+    // Pause timer if fullscreen is exited
+    if (isPaused) {
       return;
     }
 
@@ -61,13 +430,7 @@ const AssessmentPage = () => {
       setTimeRemaining((prev) => prev - 1);
     }, 1000);
     return () => clearTimeout(timer);
-  }, [timeRemaining]);
-
-  const handleAutoSubmit = () => {
-    alert("Time's up! Submitting assessment...");
-    // Submit all answers to backend
-    navigate("/assessment-complete");
-  };
+  }, [timeRemaining, isPaused, handleAutoSubmit]);
 
   // Navigation handlers
   const handleNextQuestion = () => {
@@ -100,10 +463,8 @@ const AssessmentPage = () => {
   };
 
   const handleSubmitAssessment = async () => {
-    // TODO: Submit to backend in next step
-    console.log("Submitting assessment with answers:", answers);
-    alert("Assessment submitted!");
-    navigate("/assessment-complete");
+    // Submit via our new function
+    submitAssessment(false);
   };
 
   // Format time remaining (MM:SS)
@@ -150,6 +511,30 @@ const AssessmentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Security Watermark */}
+      <SecurityWatermark
+        assessmentId={assessmentId}
+        candidateName={`Candidate-${attemptId?.slice(0, 8) || 'Unknown'}`}
+        attemptId={attemptId}
+      />
+
+      {/* Toast Notifications */}
+      <ToastContainer toasts={toast.toasts} removeToast={toast.removeToast} />
+
+      {/* Fullscreen Warning Overlay */}
+      <FullscreenWarningOverlay
+        onAutoSubmit={handleFullscreenAutoSubmit}
+      />
+
+      {/* Violation Warning Modal */}
+      <ViolationWarningModal
+        isOpen={violationModalOpen}
+        violationType={currentViolationType}
+        currentCount={violationCounts[currentViolationType] || 0}
+        threshold={VIOLATION_THRESHOLDS[currentViolationType]?.autoSubmitThreshold || 5}
+        onClose={() => setViolationModalOpen(false)}
+      />
+
       {/* Header with timer */}
       <div className="bg-blue-600 text-white p-4 shadow">
         <div className="max-w-4xl mx-auto flex justify-between items-center">

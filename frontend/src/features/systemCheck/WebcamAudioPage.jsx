@@ -3,11 +3,14 @@ import { useParams, useNavigate } from "react-router-dom";
 import WebCamCheck from "./WebCamCheck";
 import AudioCheck from "./AudioCheck";
 import apiClient from "../../api/apiClient";
+import FullscreenModal from "../shared/FullscreenModal";
+import { useFullscreenContext } from "../../context/FullscreenContext";
 
 const WebcamAudioPage = () => {
   const { attemptId, systemCheckId } = useParams(); // Get both from URL params
   const navigate = useNavigate();
   const originalText = "The quick brown fox jumps over the lazy dog"; // Text for audio verification
+  const { showModal, setShowModal, setFullscreenRequired } = useFullscreenContext();
 
   // Debug: Log attemptId
   console.log('WebcamAudioPage - attemptId:', attemptId);
@@ -16,6 +19,8 @@ const WebcamAudioPage = () => {
   const [faceDone, setFaceDone] = useState(false);
   const [audioDone, setAudioDone] = useState(false);
   const [isStarting, setIsStarting] = useState(false);
+  const [startButtonDisabled, setStartButtonDisabled] = useState(false);
+  const [assessmentData, setAssessmentData] = useState(null);
 
   // Handle success from Webcam (face capture)
   const handleFaceSuccess = () => {
@@ -29,11 +34,11 @@ const WebcamAudioPage = () => {
     // Optionally feedback, or proceed next
   };
 
-  // Handle Start Assessment button click
-  const handleStartAssessment = async () => {
+  // Handle Start button click - Show fullscreen modal
+  const handleStartButtonClick = async () => {
     try {
       setIsStarting(true);
-      console.log("Assessment getting started");
+      console.log("Fetching assessment data...");
       console.log("Attempt ID:", attemptId);
 
       // Fetch the attempt to get the assessmentId
@@ -44,8 +49,12 @@ const WebcamAudioPage = () => {
       if (response.data.success) {
         const { assessmentId } = response.data.data;
         console.log("Assessment ID:", assessmentId);
-        // Navigate to assessment page
-        navigate(`/assessment/${assessmentId}/${attemptId}`);
+
+        // Store assessment data for later navigation
+        setAssessmentData({ assessmentId, attemptId });
+
+        // Show fullscreen modal
+        setShowModal(true);
       } else {
         console.error('API returned unsuccessful response:', response.data);
         alert('Failed to start assessment. Please try again.');
@@ -58,6 +67,33 @@ const WebcamAudioPage = () => {
     } finally {
       setIsStarting(false);
     }
+  };
+
+  // Handle fullscreen modal confirm - Navigate to assessment
+  const handleFullscreenConfirm = () => {
+    if (assessmentData) {
+      const { assessmentId, attemptId } = assessmentData;
+
+      // Enable fullscreen requirement for assessment
+      setFullscreenRequired(true);
+
+      // Close modal
+      setShowModal(false);
+
+      // Navigate to assessment page
+      navigate(`/assessment/${assessmentId}/${attemptId}`);
+    }
+  };
+
+  // Handle fullscreen modal cancel - Disable start button
+  const handleFullscreenCancel = () => {
+    setShowModal(false);
+    setStartButtonDisabled(true);
+  };
+
+  // Handle retry after cancel
+  const handleRetry = () => {
+    setStartButtonDisabled(false);
   };
 
   // You could add logic to only enable "Proceed" when both checks passed
@@ -95,15 +131,39 @@ const WebcamAudioPage = () => {
           <div className="p-3 border rounded text-green-800 bg-green-100 font-bold text-center">
             All checks completed! You may proceed.
           </div>
-          <button
-            onClick={handleStartAssessment}
-            disabled={isStarting}
-            className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
-          >
-            {isStarting ? 'Starting Assessment...' : 'Start'}
-          </button>
+
+          {/* Start Button or Disabled Message */}
+          {startButtonDisabled ? (
+            <div className="space-y-3">
+              <div className="p-3 border border-red-400 rounded text-red-700 bg-red-50 text-center">
+                Fullscreen mode is required to proceed. Click "Retry" to continue.
+              </div>
+              <button
+                onClick={handleRetry}
+                className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-colors"
+              >
+                Retry
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={handleStartButtonClick}
+              disabled={isStarting}
+              className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+            >
+              {isStarting ? 'Loading Assessment...' : 'Start'}
+            </button>
+          )}
         </div>
       )}
+
+      {/* Fullscreen Modal */}
+      <FullscreenModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+        onConfirm={handleFullscreenConfirm}
+        onCancel={handleFullscreenCancel}
+      />
     </div>
   );
 };

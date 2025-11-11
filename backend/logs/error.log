@@ -312,3 +312,960 @@ Unknown field [31m`questionSections`[39m for [1minclude[22m statement on mod
     at ei.request (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:121:6300)
     at async a (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\@prisma\client\runtime\library.js:130:9551)
     at async file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/controllers/assessmentController.js:227:19
+2025-11-11 10:43:37 [error]: Error: Route not found: /api/v1/assessments/9252197e-7d5d-4d01-b69e-f0d6dbc65756/attempts/4f7dcc9c-f8f3-48d7-b9b8-4f427ce1d0d8/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:43:39 [error]: Error: Route not found: /api/v1/assessments/9252197e-7d5d-4d01-b69e-f0d6dbc65756/attempts/4f7dcc9c-f8f3-48d7-b9b8-4f427ce1d0d8/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:13 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:16 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 10:45:17 [error]: Error: Route not found: /api/v1/assessments/729dbab7-8ca5-433e-83f9-5906298e6cff/attempts/ab59dffe-d50b-4f5f-a3c8-c09483fb0761/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:35 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:35 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:35 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:36 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:37 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:27:37 [error]: Error: Route not found: /api/v1/assessments/5fbfd659-d136-446a-8f1a-84c24fd0abe6/attempts/c08710a8-dcdc-42a7-8179-074423eb38bb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:04 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:04 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:06 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:06 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:06 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:06 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:06 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 11:29:08 [error]: Error: Route not found: /api/v1/assessments/ef6be2d6-5322-4c8f-9543-db9606632d6c/attempts/07868d46-cd61-4f6b-8971-cb44f62c3c9d/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:08:58 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:08:58 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:08:59 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:08:59 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:08:59 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:09:00 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:09:00 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:09:01 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:33 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:33 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:33 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:34 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:35 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+2025-11-11 13:11:35 [error]: Error: Route not found: /api/v1/assessments/a8f842d1-7e51-47e2-b4fb-13cef012b327/attempts/d04f8d94-1deb-4d06-81f7-2df9696369eb/violations/batch
+    at notFoundHandler (file:///C:/Users/tiwar/Desktop/HitouchCX_Projects/ProctoringChecksCopy1/backend/src/middlewares/errorHandler.js:147:17)
+    at Layer.handleRequest (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:342:13)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:297:9
+    at processParams (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:582:12)
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:291:5)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)
+    at C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:688:15
+    at next (C:\Users\tiwar\Desktop\HitouchCX_Projects\ProctoringChecksCopy1\backend\node_modules\router\index.js:276:14)

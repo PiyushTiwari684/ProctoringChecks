@@ -23,7 +23,8 @@
     "react-use-audio-recorder": "^0.4.2",
     "react-webcam": "^7.2.0",
     "tailwindcss": "^4.1.16",
-    "ua-parser-js": "^2.0.6"
+    "ua-parser-js": "^2.0.6",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

@@ -1,4 +1,5 @@
 function levenshteinDistance(str1, str2){
+     console.log("String match called from levensh ");
     const l1 = str1.length;
     const l2 = str2.length;
 

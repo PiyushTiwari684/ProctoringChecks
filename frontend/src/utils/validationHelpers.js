@@ -6,7 +6,7 @@
  */
 
 
-export function isFaceCentered(face, videoWidth, videoHeight, tolerance = 0.2) {
+export function isFaceCentered(face, videoWidth, videoHeight, tolerance = 0.4) {
   const faceCenterX = (face.topLeft[0] + face.bottomRight[0]) / 2;
   const faceCenterY = (face.topLeft[1] + face.bottomRight[1]) / 2;
 
@@ -24,8 +24,8 @@ export function isFaceProperSize(
   face,
   videoWidth,
   videoHeight,
-  minSize = 0.15,
-  maxSize = 0.50
+  minSize = 0.10,
+  maxSize = 0.60
 ) {
   const faceWidth = face.bottomRight[0] - face.topLeft[0];
   const faceHeight = face.bottomRight[1] - face.topLeft[1];
@@ -48,7 +48,7 @@ export function getFaceSizePercentage(face, videoWidth, videoHeight) {
 }
 
 
-export function hasGoodConfidence(face, threshold = 0.7) {
+export function hasGoodConfidence(face, threshold = 0.6) {
   return face.probability >= threshold;
 }
 
@@ -87,13 +87,7 @@ export const ValidationStatus = {
   TOO_CLOSE: 'TOO_CLOSE'
 };
 
-/**
- * Get comprehensive validation status
- * @param {Array} faces - Array of detected faces from BlazeFace
- * @param {number} videoWidth - Video width in pixels
- * @param {number} videoHeight - Video height in pixels
- * @returns {Object} Validation result { isValid, status, message, icon }
- */
+
 export function getValidationStatus(faces, videoWidth, videoHeight) {
   // No face detected
   if (faces.length === 0) {
@@ -151,7 +145,7 @@ export function getValidationStatus(faces, videoWidth, videoHeight) {
   if (!isFaceProperSize(face, videoWidth, videoHeight)) {
     const facePercentage = getFaceSizePercentage(face, videoWidth, videoHeight);
 
-    if (facePercentage < 0.15) {
+    if (facePercentage < 0.10) {
       return {
         isValid: false,
         status: ValidationStatus.TOO_FAR,
